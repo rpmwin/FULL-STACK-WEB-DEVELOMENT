@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body><center>
+    <form name="bmiForm">
+        <div class="bmi-calculator">
+            <h1 style="margin-bottom: 1em;">Calculate your BMI</h1>
+            <div class="bmi-calculato                r-weight">
+                <p style="margin-top: 1.8em;">
+                    WEIGHT:
+                    <input id="inputWeight" type="number" value="0" min="0" />
+                    <span id="weight"></span> kg
+                </p>
+            </div>
+            <div class="bmi-calculator-height">
+                <p style="margin-top: 1.8em;">
+                    HEIGHT:
+                    <input id="inputHeight" type="number" value="0" min="0" />
+                    <span id="height"></span> m
+                </p>
+            </div>
+            <input class="gumb" type="button" value="Calculate" onclick="calculateBmi()" style="margin-top: 0.5em">
+            <p style="margin-top: 1em;font-size: 1.2em;">
+                <strong>Your BMI:</strong>
+                <span id="yourbmi" style="font-size: 1.2em;margin-left: 8px;"></span>
+            </p>
+            <p></p>
+            <p>
+                <span id="evaluationMessage"></span>
+            </p>
+        </div>
+    </form></center>
+    <script src="index.js"></script>
+</body>
+
+</html>

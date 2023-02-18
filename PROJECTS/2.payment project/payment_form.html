@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form></title>
+</head>
+
+<body>
+    <center>
+        <form action="">
+            <h1>payment form</h1>
+            <h2>contact information</h2>
+            <p>name: * <input type="name " name="" id=""></p>
+            <fieldset>
+                <legend>gender *</legend>
+                <p><b>
+                        male <input type="radio" name="gender" id="male">
+                        female <input type="radio" name="gender" id="female">
+                        others <input type="radio" name="gender" id="others">
+                    </b>
+                </p>
+            </fieldset>
+            <p>address : *<textarea name="address" id="address" cols="70" rows="7" required></textarea></p>
+            <p>email : *<input type="email" name="email" id="email" required></p>
+            <p>pincode : *<input type="number" name="pincode" id="pincode" required></p>
+            <hr>
+            <h2>payment information</h2>
+            <p>card type : *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--select a card type--</option>
+                    <option value="visa">visa</option>
+                    <option value="rupay">rupay</option>
+                    <option value="mastercard">mastercard</option>
+                    <option value="upi">upi</option>
+                </select>
+            </p>
+            <p>
+                card number *<input type="number" name="card_number" id="card_number" required>
+            </p>
+            <p>
+                expiration date: *<input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                cvv *<input type="password" name="cvv" id="cvv" required>
+            </p>
+            <input type="submit" value="pay now">
+        </form>
+    </center>
+</body>
+
+</html>

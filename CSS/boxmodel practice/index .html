@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* overflow: hidden; */
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            border: 3px solid black;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            padding: 6px;
+            width: 25px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">a hello </div>
+        <div class="box">b how</div>
+        <div class="box">c are</div>
+        <div class="box">d you</div>
+        <div class="box">e hi</div>
+        <div class="box">f good</div>
+        <div class="box">g morning</div>
+        <div class="box">h everyone</div>
+    </div>
+
+
+</body>
+
+</html>
